@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    background-color: #00f6ff;
+    height: 60px;
+    width: 450px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    margin-right: 50px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-content {
+    max-width: 600px;
+    color: white;
+    margin-top: 0px;
+    margin-left: 500px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content h3{
+    color: #ff5900;
+    font-size: 32px;
+    margin-top: 10px;
+}
+.home-content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.hire_me-button{
+    background-color: #f2ff00;
+    border: 2px solid #f2ff00;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.hire_me-button:hover{
+    background-color: transparent;
+    color: rgb(245, 242, 242);
+    
+}
+.lets_talk-button{
+    background-color: transparent;
+    border: 2px solid #f2ff00;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.lets_talk-button:hover{
+    background-color: #ffff00;
+    color: rgb(0, 0, 0);
+}
+
+.glow {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 350px;
+    height: 350px;
+    background-image: url(/Portfolio/Images/1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: glowEffect 1s infinite alternate;
+    transition: .5s ease;
+
+}
+.glow:hover{
+    background-image: url(/Portfolio/Images/My\ Image.jpg);
+    transition: .5s ease;
+
+}
+
+@keyframes glowEffect {
+    from {
+        box-shadow: 0 0 30px #ffffff;
+    }
+    to {
+        box-shadow: 0 0 40px #fffb00;
+    }
+}
+
+.resume-btn{
+    background-color: #f2ff00;
+    border: 2px solid #f2ff00;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.logo {
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fffb06;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+@media (max-width: 768px) {
+    .profile-container, .glow {
+        width: 200px;
+        height: 200px;
+        display: none;
+    }
+    .header {
+        padding-left: 15px;
+        padding-top: 0px;
+    }
+    .logo {
+        font-size: 18px;
+    }
+    .navbar a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        margin-left: 2px;
+        margin-right: 5px;
+        transition: .3s;
+    }
+    .home-content{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+.icons .fa-brands{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.icons .fa-brands:hover{
+    color: #fffb00;
+    font-size: 2.5rem;
+}
+.icons{
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
